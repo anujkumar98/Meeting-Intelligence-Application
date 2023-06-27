@@ -28,7 +28,7 @@ The Meeting Intelligence Application is a powerful tool that streamlines audio t
 
 Project Architecture Diagram and technologies used
 
-![image]([[https://github.com/anujkumar98/Meeting-Intelligence-Application/blob/3560e76f79ace83d90429ede437c00f2c432cc91/Architecture%20Diagram/architecture_diagram.png](https://github.com/anujkumar98/Meeting-Intelligence-Application/blob/162fcda730d6aa40e1a7ad6b0fbe25223260716c/Architecture%20Diagram/architecture_diagram.png)](https://github.com/anujkumar98/Meeting-Intelligence-Application/blob/25da9ca5946a5e7e9a4dc1ea7be6e6e09a839b46/Architecture%20Diagram/architecture_diagram.png))
+![image](./Architecture Diagram/architecture_diagram.png)
 
 # Process Outline
 
