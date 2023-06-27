@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  api:
+    container_name: fastapi_container
+    build: FastApi
+    ports: 
+      - "8000:8000"
+    environment:
+      - open_api_key=${open_api_key}
+      - bucket_name=${bucket_name}
+      - host=${host}
+      - user=${user}
+      - password=${password}
+      - db=${db}
+      - JWT_SECRET=${JWT_SECRET}
+      - Embedding_Model=${Embedding_Model}
+      - pinecone_api_key=${pinecone_api_key}
+      - pinecone_environment=${pinecone_environment}
+      - pinecone_index_name=${pinecone_index_name}
