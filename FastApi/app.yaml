@@ -1,0 +1,20 @@
+runtime: python37
+entrypoint: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+env_variables:
+  # Read in environment variables from .env file
+  $(cat .env | sed 's/^/  /' | sed 's/=/: /')
+handlers:
+- url: /get_restaurant_id
+  script: main.app
+- url: /query_pinecone
+  script: main.app
+- url: /query_gpt
+  script: main.app
+- url: /get_log_count
+  script: main.app
+- url: /forgot_password
+  script: main.app
+- url: /.*
+  script: main.app
+- url: /_ah/api/.*
+  script: ...
